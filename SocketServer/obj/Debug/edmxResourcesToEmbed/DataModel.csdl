@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HoTDataModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="map">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Expansion" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Players" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GameType" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="race">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Attack" Type="Int32" Nullable="false" />
+    <Property Name="Dodge" Type="Int32" Nullable="false" />
+    <Property Name="Accuracy" Type="Int32" Nullable="false" />
+    <Property Name="HitPoints" Type="Int32" Nullable="false" />
+    <Property Name="Magic" Type="Int32" Nullable="false" />
+    <Property Name="MovementSpeed" Type="Int32" Nullable="false" />
+    <Property Name="FireResistance" Type="Int32" Nullable="false" />
+    <Property Name="MagicResistance" Type="Int32" Nullable="false" />
+    <Property Name="SlashResistance" Type="Int32" Nullable="false" />
+    <Property Name="PiercingResistance" Type="Int32" Nullable="false" />
+    <Property Name="BludgeoningResistance" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="room">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="RoomName" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Rank" Type="Int32" />
+    <Property Name="WaitingForPlayer" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Players" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Log" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="test_table">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="gender" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="food" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="unitcatalogue">
+    <Key>
+      <PropertyRef Name="CatalogueID" />
+    </Key>
+    <Property Name="CatalogueID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UnitType" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Faction" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Rarity" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Collection" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Race" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DamageType" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Attack" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Accuracy" Type="Int32" Nullable="false" />
+    <Property Name="Dodge" Type="Int32" Nullable="false" />
+    <Property Name="HitPoints" Type="Int32" Nullable="false" />
+    <Property Name="MovementSpeed" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Magic" Type="Int32" Nullable="false" />
+    <Property Name="MagicResistance" Type="Int32" Nullable="false" />
+    <Property Name="FireResistance" Type="Int32" Nullable="false" />
+    <Property Name="SlashResistance" Type="Int32" Nullable="false" />
+    <Property Name="PiercingResistance" Type="Int32" Nullable="false" />
+    <Property Name="BludgeoningResistance" Type="Int32" Nullable="false" />
+    <Property Name="MinAttackRange" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaxAttackRange" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Abilities" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Artist" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FlavourText" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="iId" />
+    </Key>
+    <Property Name="iId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Gold" Type="Int32" Nullable="false" />
+    <Property Name="Dust" Type="Int32" Nullable="false" />
+    <Property Name="Rank" Type="Int32" Nullable="false" />
+    <Property Name="Deck1" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Deck2" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Deck3" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Deck4" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Deck5" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Deck6" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Deck7" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Deck8" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Deck0" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="newsfeed">
+    <Key>
+      <PropertyRef Name="Title" />
+      <PropertyRef Name="Body" />
+      <PropertyRef Name="URL" />
+      <PropertyRef Name="ImageURL" />
+    </Key>
+    <Property Name="Title" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Body" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="URL" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ImageURL" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="unitvault">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Attack" />
+      <PropertyRef Name="Accuracy" />
+      <PropertyRef Name="Dodge" />
+      <PropertyRef Name="HitPoints" />
+      <PropertyRef Name="Magic" />
+      <PropertyRef Name="MagicResistance" />
+      <PropertyRef Name="FireResistance" />
+      <PropertyRef Name="SlashResistance" />
+      <PropertyRef Name="PiercingResistance" />
+      <PropertyRef Name="BludgeoningResistance" />
+      <PropertyRef Name="MovementSpeed" />
+      <PropertyRef Name="MinAttRange" />
+      <PropertyRef Name="MaxAttRange" />
+      <PropertyRef Name="Experience" />
+      <PropertyRef Name="Level" />
+      <PropertyRef Name="Abilities" />
+      <PropertyRef Name="Owner" />
+      <PropertyRef Name="CatalogueID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Attack" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Accuracy" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Dodge" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="HitPoints" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Magic" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MagicResistance" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FireResistance" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SlashResistance" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PiercingResistance" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BludgeoningResistance" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MovementSpeed" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MinAttRange" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaxAttRange" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Experience" Type="Int32" Nullable="false" />
+    <Property Name="Level" Type="Int32" Nullable="false" />
+    <Property Name="Abilities" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Owner" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CatalogueID" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="testEntities3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="maps" EntityType="Self.map" />
+    <EntitySet Name="races" EntityType="Self.race" />
+    <EntitySet Name="rooms" EntityType="Self.room" />
+    <EntitySet Name="test_table" EntityType="Self.test_table" />
+    <EntitySet Name="unitcatalogues" EntityType="Self.unitcatalogue" />
+    <EntitySet Name="users" EntityType="Self.user" />
+    <EntitySet Name="newsfeeds" EntityType="Self.newsfeed" />
+    <EntitySet Name="unitvaults" EntityType="Self.unitvault" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="hotModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="mapmetadata">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="text" Nullable="false" />
+    <Property Name="Expansion" Type="text" Nullable="false" />
+    <Property Name="PlayerCount" Type="int" Nullable="false" />
+    <Property Name="MapType" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="newsfeed">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="text" Nullable="false" />
+    <Property Name="Body" Type="text" Nullable="false" />
+    <Property Name="URL" Type="text" Nullable="false" />
+    <Property Name="ImageURL" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="races">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Name" Type="text" Nullable="false" />
+    <Property Name="Description" Type="text" Nullable="false" />
+    <Property Name="Attack" Type="int" Nullable="false" />
+    <Property Name="Dodge" Type="int" Nullable="false" />
+    <Property Name="Accuracy" Type="int" Nullable="false" />
+    <Property Name="HitPoints" Type="int" Nullable="false" />
+    <Property Name="Magic" Type="int" Nullable="false" />
+    <Property Name="MovementSpeed" Type="int" Nullable="false" />
+    <Property Name="FireResistance" Type="int" Nullable="false" />
+    <Property Name="MagicResistance" Type="int" Nullable="false" />
+    <Property Name="SlashResistance" Type="int" Nullable="false" />
+    <Property Name="PiercingResistance" Type="int" Nullable="false" />
+    <Property Name="BludgeoningResistance" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="test_table">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="text" Nullable="false" />
+    <Property Name="gender" Type="text" Nullable="false" />
+    <Property Name="food" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="unitcatalogue">
+    <Key>
+      <PropertyRef Name="CatalogueID" />
+    </Key>
+    <Property Name="CatalogueID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="text" Nullable="false" />
+    <Property Name="UnitType" Type="text" Nullable="false" />
+    <Property Name="Faction" Type="text" Nullable="false" />
+    <Property Name="Rarity" Type="text" Nullable="false" />
+    <Property Name="Collection" Type="text" Nullable="false" />
+    <Property Name="Race" Type="text" Nullable="false" />
+    <Property Name="DamageType" Type="text" Nullable="false" />
+    <Property Name="Attack" Type="text" Nullable="false" />
+    <Property Name="Accuracy" Type="int" Nullable="false" />
+    <Property Name="Dodge" Type="int" Nullable="false" />
+    <Property Name="HitPoints" Type="int" Nullable="false" />
+    <Property Name="MovementSpeed" Type="text" Nullable="false" />
+    <Property Name="Magic" Type="int" Nullable="false" />
+    <Property Name="MagicResistance" Type="int" Nullable="false" />
+    <Property Name="FireResistance" Type="int" Nullable="false" />
+    <Property Name="SlashResistance" Type="int" Nullable="false" />
+    <Property Name="PiercingResistance" Type="int" Nullable="false" />
+    <Property Name="BludgeoningResistance" Type="int" Nullable="false" />
+    <Property Name="MinAttackRange" Type="text" Nullable="false" />
+    <Property Name="MaxAttackRange" Type="text" Nullable="false" />
+    <Property Name="Abilities" Type="text" Nullable="false" />
+    <Property Name="Artist" Type="text" Nullable="false" />
+    <Property Name="FlavourText" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="unitvault">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Attack" Type="text" Nullable="false" />
+    <Property Name="Accuracy" Type="text" Nullable="false" />
+    <Property Name="Dodge" Type="text" Nullable="false" />
+    <Property Name="HitPoints" Type="text" Nullable="false" />
+    <Property Name="Magic" Type="text" Nullable="false" />
+    <Property Name="MagicResistance" Type="text" Nullable="false" />
+    <Property Name="FireResistance" Type="text" Nullable="false" />
+    <Property Name="SlashResistance" Type="text" Nullable="false" />
+    <Property Name="PiercingResistance" Type="text" Nullable="false" />
+    <Property Name="BludgeoningResistance" Type="text" Nullable="false" />
+    <Property Name="MovementSpeed" Type="text" Nullable="false" />
+    <Property Name="MinAttRange" Type="text" Nullable="false" />
+    <Property Name="MaxAttRange" Type="text" Nullable="false" />
+    <Property Name="Experience" Type="int" Nullable="false" />
+    <Property Name="Level" Type="int" Nullable="false" />
+    <Property Name="Abilities" Type="text" Nullable="false" />
+    <Property Name="Owner" Type="text" Nullable="false" />
+    <Property Name="CatalogueID" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="iId" />
+    </Key>
+    <Property Name="iId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="text" Nullable="false" />
+    <Property Name="Password" Type="text" Nullable="false" />
+    <Property Name="Gold" Type="int" />
+    <Property Name="Dust" Type="int" />
+    <Property Name="Rank" Type="int" />
+    <Property Name="Deck1" Type="text" />
+    <Property Name="Deck2" Type="text" />
+    <Property Name="Deck3" Type="text" />
+    <Property Name="Deck4" Type="text" />
+    <Property Name="Deck5" Type="text" />
+    <Property Name="Deck6" Type="text" />
+    <Property Name="Deck7" Type="text" />
+    <Property Name="Deck8" Type="text" />
+    <Property Name="Deck0" Type="text" />
+  </EntityType>
+  <EntityContainer Name="hotModelStoreContainer">
+    <EntitySet Name="mapmetadata" EntityType="Self.mapmetadata" Schema="hot" store:Type="Tables" />
+    <EntitySet Name="newsfeed" EntityType="Self.newsfeed" Schema="hot" store:Type="Tables" />
+    <EntitySet Name="races" EntityType="Self.races" Schema="hot" store:Type="Tables" />
+    <EntitySet Name="test_table" EntityType="Self.test_table" Schema="hot" store:Type="Tables" />
+    <EntitySet Name="unitcatalogue" EntityType="Self.unitcatalogue" Schema="hot" store:Type="Tables" />
+    <EntitySet Name="unitvault" EntityType="Self.unitvault" Schema="hot" store:Type="Tables" />
+    <EntitySet Name="users" EntityType="Self.users" Schema="hot" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

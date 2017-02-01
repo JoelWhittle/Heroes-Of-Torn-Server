@@ -1,0 +1,14 @@
+c:\users\kelly ann hibbert\documents\visual studio 2013\Projects\SocketServer\SocketServer\bin\Debug\SocketServer.exe.config
+c:\users\kelly ann hibbert\documents\visual studio 2013\Projects\SocketServer\SocketServer\bin\Debug\SocketServer.exe
+c:\users\kelly ann hibbert\documents\visual studio 2013\Projects\SocketServer\SocketServer\bin\Debug\SocketServer.pdb
+c:\users\kelly ann hibbert\documents\visual studio 2013\Projects\SocketServer\SocketServer\obj\Debug\SocketServer.exe
+c:\users\kelly ann hibbert\documents\visual studio 2013\Projects\SocketServer\SocketServer\obj\Debug\SocketServer.pdb
+c:\users\kelly ann hibbert\documents\visual studio 2013\Projects\SocketServer\SocketServer\obj\Debug\SocketServer.Form1.resources
+c:\users\kelly ann hibbert\documents\visual studio 2013\Projects\SocketServer\SocketServer\obj\Debug\SocketServer.csproj.GenerateResource.Cache
+C:\Users\Kelly Ann Hibbert\documents\visual studio 2013\Projects\SocketServer\SocketServer\bin\Debug\UnityEngine.dll
+C:\Users\Kelly Ann Hibbert\documents\visual studio 2013\Projects\SocketServer\SocketServer\bin\Debug\EntityFramework.dll
+C:\Users\Kelly Ann Hibbert\documents\visual studio 2013\Projects\SocketServer\SocketServer\bin\Debug\EntityFramework.xml
+C:\Users\Kelly Ann Hibbert\documents\visual studio 2013\Projects\SocketServer\SocketServer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kelly Ann Hibbert\documents\visual studio 2013\Projects\SocketServer\SocketServer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kelly Ann Hibbert\documents\visual studio 2013\Projects\SocketServer\SocketServer\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Kelly Ann Hibbert\documents\visual studio 2013\Projects\SocketServer\SocketServer\obj\Debug\SocketServer.csprojResolveAssemblyReference.cache

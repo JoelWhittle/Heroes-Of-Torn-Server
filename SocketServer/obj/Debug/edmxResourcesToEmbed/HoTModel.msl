@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="hotModelStoreContainer" CdmEntityContainer="hotEntities">
+    <EntitySetMapping Name="races">
+      <EntityTypeMapping TypeName="hotModel.race">
+        <MappingFragment StoreEntitySet="races">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Attack" ColumnName="Attack" />
+          <ScalarProperty Name="Dodge" ColumnName="Dodge" />
+          <ScalarProperty Name="Accuracy" ColumnName="Accuracy" />
+          <ScalarProperty Name="HitPoints" ColumnName="HitPoints" />
+          <ScalarProperty Name="Magic" ColumnName="Magic" />
+          <ScalarProperty Name="MovementSpeed" ColumnName="MovementSpeed" />
+          <ScalarProperty Name="FireResistance" ColumnName="FireResistance" />
+          <ScalarProperty Name="MagicResistance" ColumnName="MagicResistance" />
+          <ScalarProperty Name="SlashResistance" ColumnName="SlashResistance" />
+          <ScalarProperty Name="PiercingResistance" ColumnName="PiercingResistance" />
+          <ScalarProperty Name="BludgeoningResistance" ColumnName="BludgeoningResistance" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="test_table">
+      <EntityTypeMapping TypeName="hotModel.test_table">
+        <MappingFragment StoreEntitySet="test_table">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="food" ColumnName="food" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="unitcatalogues">
+      <EntityTypeMapping TypeName="hotModel.unitcatalogue">
+        <MappingFragment StoreEntitySet="unitcatalogue">
+          <ScalarProperty Name="CatalogueID" ColumnName="CatalogueID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UnitType" ColumnName="UnitType" />
+          <ScalarProperty Name="Faction" ColumnName="Faction" />
+          <ScalarProperty Name="Rarity" ColumnName="Rarity" />
+          <ScalarProperty Name="Collection" ColumnName="Collection" />
+          <ScalarProperty Name="Race" ColumnName="Race" />
+          <ScalarProperty Name="DamageType" ColumnName="DamageType" />
+          <ScalarProperty Name="Attack" ColumnName="Attack" />
+          <ScalarProperty Name="Accuracy" ColumnName="Accuracy" />
+          <ScalarProperty Name="Dodge" ColumnName="Dodge" />
+          <ScalarProperty Name="HitPoints" ColumnName="HitPoints" />
+          <ScalarProperty Name="MovementSpeed" ColumnName="MovementSpeed" />
+          <ScalarProperty Name="Magic" ColumnName="Magic" />
+          <ScalarProperty Name="MagicResistance" ColumnName="MagicResistance" />
+          <ScalarProperty Name="FireResistance" ColumnName="FireResistance" />
+          <ScalarProperty Name="SlashResistance" ColumnName="SlashResistance" />
+          <ScalarProperty Name="PiercingResistance" ColumnName="PiercingResistance" />
+          <ScalarProperty Name="BludgeoningResistance" ColumnName="BludgeoningResistance" />
+          <ScalarProperty Name="MinAttackRange" ColumnName="MinAttackRange" />
+          <ScalarProperty Name="MaxAttackRange" ColumnName="MaxAttackRange" />
+          <ScalarProperty Name="Abilities" ColumnName="Abilities" />
+          <ScalarProperty Name="Artist" ColumnName="Artist" />
+          <ScalarProperty Name="FlavourText" ColumnName="FlavourText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="hotModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="iId" ColumnName="iId" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Gold" ColumnName="Gold" />
+          <ScalarProperty Name="Dust" ColumnName="Dust" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="Deck1" ColumnName="Deck1" />
+          <ScalarProperty Name="Deck2" ColumnName="Deck2" />
+          <ScalarProperty Name="Deck3" ColumnName="Deck3" />
+          <ScalarProperty Name="Deck4" ColumnName="Deck4" />
+          <ScalarProperty Name="Deck5" ColumnName="Deck5" />
+          <ScalarProperty Name="Deck6" ColumnName="Deck6" />
+          <ScalarProperty Name="Deck7" ColumnName="Deck7" />
+          <ScalarProperty Name="Deck8" ColumnName="Deck8" />
+          <ScalarProperty Name="Deck0" ColumnName="Deck0" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="newsfeeds">
+      <EntityTypeMapping TypeName="hotModel.newsfeed">
+        <MappingFragment StoreEntitySet="newsfeed">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="ImageURL" ColumnName="ImageURL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="unitvaults">
+      <EntityTypeMapping TypeName="hotModel.unitvault">
+        <MappingFragment StoreEntitySet="unitvault">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Attack" ColumnName="Attack" />
+          <ScalarProperty Name="Accuracy" ColumnName="Accuracy" />
+          <ScalarProperty Name="Dodge" ColumnName="Dodge" />
+          <ScalarProperty Name="HitPoints" ColumnName="HitPoints" />
+          <ScalarProperty Name="Magic" ColumnName="Magic" />
+          <ScalarProperty Name="MagicResistance" ColumnName="MagicResistance" />
+          <ScalarProperty Name="FireResistance" ColumnName="FireResistance" />
+          <ScalarProperty Name="SlashResistance" ColumnName="SlashResistance" />
+          <ScalarProperty Name="PiercingResistance" ColumnName="PiercingResistance" />
+          <ScalarProperty Name="BludgeoningResistance" ColumnName="BludgeoningResistance" />
+          <ScalarProperty Name="MovementSpeed" ColumnName="MovementSpeed" />
+          <ScalarProperty Name="MinAttRange" ColumnName="MinAttRange" />
+          <ScalarProperty Name="MaxAttRange" ColumnName="MaxAttRange" />
+          <ScalarProperty Name="Experience" ColumnName="Experience" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Abilities" ColumnName="Abilities" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="CatalogueID" ColumnName="CatalogueID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mapmetadatas">
+      <EntityTypeMapping TypeName="hotModel.mapmetadata">
+        <MappingFragment StoreEntitySet="mapmetadata">
+          <ScalarProperty Name="MapType" ColumnName="MapType" />
+          <ScalarProperty Name="PlayerCount" ColumnName="PlayerCount" />
+          <ScalarProperty Name="Expansion" ColumnName="Expansion" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
